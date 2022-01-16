@@ -48,7 +48,7 @@ const Form = ( {currentId, setCurrentId} ) => {
     return (
         <Paper className={classes.paper}>
           <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
-            <Typography variant="h6">{currentId ? `Editing "${product.price}"` : 'Create a Product'}</Typography>
+            <Typography variant="h6">{currentId ? `Editing "${product.productName}"` : 'Create a Product'}</Typography>
             <TextField name="productName" variant="outlined" label="Product Name" fullWidth value={productData.productName} onChange={(e) => setProductData({ ...productData, productName: e.target.value })} />
             <TextField name="price" variant="outlined" label="Price" fullWidth value={productData.price} onChange={(e) => setProductData({ ...productData, price: e.target.value })} />
             <TextField name="description" variant="outlined" label="Description" fullWidth multiline rows={4} value={productData.description} onChange={(e) => setProductData({ ...productData, description: e.target.value })} />
