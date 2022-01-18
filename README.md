@@ -37,3 +37,5 @@ Inside **Server** :
 run ``` npm i ``` then run ``` npm start ```
 
 Hope you enjoy!! :)
+
+PS : I left my API keys in the github to make your life easier. I know this is not best practice.
